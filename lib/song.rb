@@ -26,6 +26,7 @@ class Song
       if x.include?(genre) == false
         x << genre
       end
+<<<<<<< HEAD
     end
     x 
   end
@@ -64,3 +65,68 @@ class Song
     artist_hash
   end
 end
+=======
+    end
+    x 
+  end
+  
+  def self.artists 
+    x = [ ]
+    @@artists.map do |artist|
+      if x.include?(artist) == false 
+        x << artist
+      end
+    end
+    x
+  end
+  
+  def self.genre_count
+    genre_hash = { }
+    
+    self.genres.each do |genre|
+      genre_hash[genre] = []
+      genre_hash[genre] = genre_count
+    end
+    genre_hash
+  end
+end
+    
+    #egenres.each do |thing|
+      #hash_brown << hash_brown[thing] = [ ]
+    #end
+    #hash_brown
+  #end
+#end
+    
+    #@@artists.map do |artist|
+      #if artist == @artist
+        #x << thing
+      #end
+      #if x.length > 0 
+        #@@artists.delete(x[0])
+        
+      #end
+    #end
+  #end
+#end
+  
+  #def genre_count
+    #hash_brown = { }
+    #@@genres.each do |thing|
+      #hash_brown << hash_brown[thing] = [ ]
+    #end
+    #hash_brown
+  #end
+  
+  #def artist_count
+    #hash_brown = { }
+    #@@artists.each do |thing|
+    #hash_brown << hash_brown[thing] = [ ]
+    #if song.artist = thing
+      #hash_brown[thing] += 1
+      #end
+    #hash_brown
+  #end
+#end
+#end
+>>>>>>> 3d178e1a31c79654f9060bb80483a60bf2ae5ea3
